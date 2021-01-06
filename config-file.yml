@@ -1,0 +1,9 @@
+global:
+  scope_interval: 15s
+
+scope_configs:
+  - job_name: prometheous
+    metrics_path: /prometheous/metrics
+    static_configs:
+      - targets:
+          - localhost: 9090
